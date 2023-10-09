@@ -1,5 +1,6 @@
 
 Game JokePô, desenvolvido com HTML,CSS E JAVASCRIPT.
+
 https://talitasouza26.github.io/JokenP-/
 
 
