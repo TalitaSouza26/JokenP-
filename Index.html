@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>JokenPô</title>
+</head>
+<body>
+             
+     <div class="containerone">
+         <h1>JokenPô</h1>
+         <br>
+        <div class="boxJokenPo" data-aos="zoom-in""
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <p class="title">PLAYER</p>
+        <div class="boxButton"></div> 
+        <button class="green" id="pedra" onclick="playHuman('pedra')">&#x1F44A;</button>
+        <button class="blue" id="papel" onclick="playHuman('papel')">&#x1F590;</button>
+        <button class="yellow" id="tesoura" onclick="playHuman('tesoura')">&#x270C;</button>
+        <p class="voceEscolha">Você escolheu <span id="escolhaVoce"></span></p>
+      </div>   
+
+       <div class="boxJokenPo" data-aos="zoom-in""
+       data-aos-easing="linear"
+       data-aos-duration="1500">
+          <p class="title" id="resultadoM">RESULTADO</p>
+          <div class="boxResult">
+             <p class="pontuacao">PLAYER: <span id="humanPontos">0</span></p> <p class="versus">VS</p>
+             <p class="maquina">MAQUINA: <span id="maquinaPontos">0</span></p>
+          </div>
+          <p class="result"></p>
+          <p></p>
+         </div>
+         <div class="boxJokenPo" data-aos="zoom-in""
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+         <p class="title">MAQUINA</p>
+          <div class="boxButton"></div> 
+         <button id="pedra">&#x1F44A;</button>
+         <button id="papel" >&#x1F590;</button>
+         <button id="tesoura">&#x270C;</button>
+         <p class="maquinaEscolha">A máquina escolheu <span id="escolhaMaquina"></span></p>
+        </div>
+      </div>
+
+ <script src="./script.js"></script>
+ <script src="./scriptG.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+ </script>
+</body>
+
+</html>
+
+
+
+
